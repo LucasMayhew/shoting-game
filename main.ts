@@ -638,7 +638,7 @@ b b b b b b b b b b b b b b b b
     kills += 1
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile25, function (sprite, location) {
-    if (game.ask("Need Life", "" + "this is your coins " + coins)) {
+    if (game.ask("Need Life", "this is your coins " + coins)) {
         if (coins > 1) {
             info.changeLifeBy(1)
             coins += -2
@@ -1146,6 +1146,7 @@ let go = false
 let y = false
 let projectile: Sprite = null
 let xx7 = 0
+let kills = 0
 let mySprite3: Sprite = null
 let if_on_woll = 0
 let coins = 0
@@ -1323,8 +1324,25 @@ tiles.placeOnRandomTile(mySprite, sprites.dungeon.darkGroundNorthWest1)
 wall = true
 info.setLife(3)
 let ddd = 1
-let kills = 0
 coins = 0
+forever(function () {
+    if (controller.up.isPressed()) {
+        y = true
+    } else {
+        if (!(controller.up.isPressed())) {
+            y = false
+        }
+    }
+})
+forever(function () {
+    if (mySprite.isHittingTile(CollisionDirection.Left)) {
+        woll_2 = true
+    } else {
+        if (!(mySprite.isHittingTile(CollisionDirection.Left))) {
+            woll_2 = false
+        }
+    }
+})
 forever(function () {
     mySprite.setVelocity(0, 40)
     mySprite.ay = 40
@@ -1369,24 +1387,6 @@ forever(function () {
     } else {
         if (!(controller.down.isPressed())) {
             go = false
-        }
-    }
-})
-forever(function () {
-    if (controller.up.isPressed()) {
-        y = true
-    } else {
-        if (!(controller.up.isPressed())) {
-            y = false
-        }
-    }
-})
-forever(function () {
-    if (mySprite.isHittingTile(CollisionDirection.Left)) {
-        woll_2 = true
-    } else {
-        if (!(mySprite.isHittingTile(CollisionDirection.Left))) {
-            woll_2 = false
         }
     }
 })
