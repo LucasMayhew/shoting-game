@@ -685,9 +685,9 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . d d d . . . . . . . . . 
 . b b b b b b b b b b . . . . . 
 . b b b b b b b b b b . . . . . 
-. d d b b b b b b d d . . . . . 
-. d d b b b b b b d d . . . . . 
-. . . b b b b b b . . . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e . . e e . . . . . . . 
@@ -944,21 +944,21 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             if (if_woll_jump == true) {
                 mySprite.setImage(img`
 . . . . . . . . . . . . . . . . 
-. . . e e e e e . . . . . . . . 
-. . . d d d e e . . . . . . . . 
-. . . d f 1 d d . . . . . . . . 
-. . . d d d d d . . . . . . . . 
-. . . . d d d . . . . . . . . . 
+. . . . e e e e e . . . . . . . 
+. . . . e e d d d . . . . . . . 
+. . . . d d 1 f d . . . . . . . 
+. . . . d d d d d . . . . . . . 
+. . . . . d d d . . . . . . . . 
 . b b b b b b b b b b . . . . . 
 . b b b b b b b b b b . . . . . 
-. d d b b b b b b d d . . . . . 
-. d d b b b b b b d d . . . . . 
-. . . b b b b b b . . . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e . . e e . . . . . . . 
 . . . d d . . d d . . . . . . . 
-. . e e e . e e e . . . . . . . 
+. . . e e e . e e e . . . . . . 
 `)
                 xx7 = 1
                 controller.moveSprite(mySprite, 0, 0)
@@ -979,9 +979,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . . d d d . . . . . . . . 
 . b b b b b b b b b b . . . . . 
 . b b b b b b b b b b . . . . . 
-. d d b b b b b b d d . . . . . 
-. d d b b b b b b d d . . . . . 
-. . . b b b b b b . . . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e . . e e . . . . . . . 
@@ -1041,9 +1041,9 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . . d d d . . . . . . . . 
 . b b b b b b b b b b . . . . . 
 . b b b b b b b b b b . . . . . 
-. d d b b b b b b d d . . . . . 
-. d d b b b b b b d d . . . . . 
-. . . b b b b b b . . . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e . . e e . . . . . . . 
@@ -1163,9 +1163,9 @@ mySprite = sprites.create(img`
 . . . . . d d d . . . . . . . . 
 . b b b b b b b b b b . . . . . 
 . b b b b b b b b b b . . . . . 
-. d d b b b b b b d d . . . . . 
-. d d b b b b b b d d . . . . . 
-. . . b b b b b b . . . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
+. d . b b b b b b . d . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e e e e e . . . . . . . 
 . . . e e . . e e . . . . . . . 
